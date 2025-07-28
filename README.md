@@ -1,33 +1,106 @@
-Data Cleaning: Steps
-Remove Unwanted Column,
-Detect Data Type
-Missing values,
-Extra spaces or wrong formats,
-Remove Null
-Inconsistent text (e.g., male, M, MALE)
-Duplicates
-Wrong data types (e.g., text instead of numbers)
+🧹 Data Cleaning Steps in Excel
+To ensure clean and reliable data before analysis, I followed these data cleaning steps:
 
-In Excel, I cleaned the raw credit card data by removing duplicates, trimming spaces, fixing inconsistent formats, and converting text to proper formats. Using formulas like TRIM, IF, and built-in tools like Remove Duplicates and Flash Fill, I was able to prepare clean, consistent data before importing it into Power BI for dashboard creation."
+✅ Remove Unwanted Columns
+✅ Detect and Correct Data Types
+✅ Handle Missing Values
+✅ Remove Extra Spaces / Fix Wrong Formats
+✅ Remove Null Entries
+✅ Fix Inconsistent Text Entries (e.g., "Male", "M", "MALE")
+✅ Remove Duplicates
+✅ Correct Wrong Data Types (e.g., text instead of numbers)
 
-SQL-Pizza Sales Analysis
-Intro & explain only these Question Before explain this
+🛠 Tools & Techniques Used:
 
-Retrieve the total number of orders placed.
-Calculate the total revenue generated from pizza sales.
-Identify the highest-priced pizza.
-Identify the most common pizza size ordered.
-List the top 5 most ordered pizza types along with their quantities.
+TRIM, IF, and other Excel formulas
 
-Join the necessary tables to find the total quantity of each pizza category ordered.
-Determine the distribution of orders by hour of the day.
-Join relevant tables to find the category-wise distribution of pizzas.
-Group the orders by date and calculate the average number of pizzas ordered per day.
-Determine the top 3 most ordered pizza types based on revenue.
+Remove Duplicates, Flash Fill, Text-to-Columns
 
-HR DASHBOARD-POWER BI
-In my HR dashboard, I tracked key KPIs like headcount, attrition rate, average tenure, and gender diversity. I used Power BI to connect HR data from Excel and SQL. I created DAX measures for attrition rate and tenure, and used visuals like bar charts and cards to highlight monthly trends. I also added slicers for department and location so HR teams could drill down easily. To handle sensitive data, I applied row-level security and published the report to Power BI Service with restricted access.
+Converted text to proper case and data types
 
+📈 Outcome: Cleaned credit card transaction data, ready for seamless import into Power BI for dashboard creation.
 
-SALES DASHBOARD-POWER BI
-"In my Sales Dashboard project, I used Power BI to visualize key sales KPIs like total revenue, YoY growth, and top-selling products. I used a star schema with Sales as the fact table and dimensions like Products, Customers, and Date. I created DAX measures to calculate dynamic sales growth and sales target achievement. The dashboard allowed filtering by region, time, and sales rep. I also implemented Row-Level Security to restrict regional access and published it to Power BI Service with scheduled refreshes."
+🍕 SQL-Based Pizza Sales Analysis
+Introduction 📊
+I performed a detailed analysis of pizza sales using SQL by cleaning, joining, and aggregating relevant tables to derive key business insights.
+
+🔍 Key Questions Answered:
+Retrieve the total number of orders placed
+
+Calculate the total revenue generated from pizza sales
+
+Identify the highest-priced pizza
+
+Find the most common pizza size ordered
+
+List the top 5 most ordered pizza types along with their quantities
+
+Join necessary tables to find total quantity of each pizza category ordered
+
+Analyze order distribution by hour of the day
+
+Find category-wise pizza distribution using joins
+
+Group orders by date to calculate average number of pizzas ordered per day
+
+Identify top 3 most ordered pizza types based on revenue
+
+🧠 Tools Used:
+
+SQL JOINS (INNER, LEFT), GROUP BY, ORDER BY, and AGGREGATE functions (SUM, COUNT, MAX, AVG)
+
+👥 HR Dashboard – Power BI
+Project Overview
+Created a comprehensive HR Dashboard using Power BI, focusing on key HR metrics and interactive visuals for easy analysis.
+
+🎯 KPIs Tracked:
+Total Headcount
+
+Attrition Rate
+
+Average Tenure
+
+Gender Diversity
+
+🧰 Tools & Techniques:
+Connected data from Excel and SQL
+
+Created DAX Measures for attrition and tenure
+
+Used bar charts, cards, and slicers for interactivity
+
+Enabled drill-down by department and location
+
+Applied Row-Level Security (RLS) for data confidentiality
+
+Published to Power BI Service with access restrictions
+
+💼 Sales Dashboard – Power BI
+Project Summary
+Built an interactive Sales Dashboard in Power BI to track business performance and empower decision-making.
+
+📊 KPIs Visualized:
+Total Revenue
+
+YoY Growth
+
+Top-Selling Products
+
+🧱 Data Model:
+Star Schema
+
+Fact Table: Sales
+
+Dimension Tables: Products, Customers, Date
+
+🛠 Techniques Used:
+Created DAX Measures for sales growth and target achievement
+
+Enabled filters by region, time, and sales rep
+
+Implemented Row-Level Security (RLS) to restrict data access
+
+Scheduled data refresh and published to Power BI Service
+
+✅ Result: A fully dynamic, interactive, and secure dashboard that delivers actionable insights for HR and Sales leadership.
+
